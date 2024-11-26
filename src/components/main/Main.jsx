@@ -1,11 +1,11 @@
 import React from "react";
 import "./Main.scss";
-import MainItem from "../Main_Item/Main_Item";
+import MainData from "../Main_data/Main_Item";
 import { PRODUCT_ITEMS } from "../../static";
 
 const Main = () => {
   const productItems = PRODUCT_ITEMS.map((product) => (
-    <MainItem
+    <MainData
       url={product.url}
       title={product.title}
       descf={product.desc1}
@@ -16,7 +16,7 @@ const Main = () => {
     />
   ))
   return (
-    <div className="lg container">
+    <div className="category">
       <div className="main">
         {productItems}
       </div>
